@@ -1,0 +1,25 @@
+{
+  "name": "promise-flow",
+  "version": "1.0.0",
+  "description": "基于Promise/A+规范实现一个Promise",
+  "main": "adapter.js",
+  "scripts": {
+    "testall": "promises-aplus-tests adapter.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tzstone/Promise.git"
+  },
+  "author": "flow",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tzstone/Promise/issues"
+  },
+  "homepage": "https://github.com/tzstone/Promise#readme",
+  "devDependencies": {
+    "mocha": "^5.1.0",
+    "promises-aplus-tests": "^2.1.2"
+  },
+  "dependencies": {}
+}
