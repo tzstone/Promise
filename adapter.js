@@ -136,19 +136,19 @@ Promise.prototype.catch = function (onRejected) {
 }
 
 // for test
-var resolved = Promise.resolve = function(value) {
+Promise.resolve = function(value) {
 	return new Promise(function(resolve, reject) {
 		resolve(value)
 	})
 }
 
-var rejected = Promise.rejected = function(reason) {
+Promise.rejected = function(reason) {
 	return new Promise(function(resolve, reject) {
 		reject(reason)
 	})
 }
 
-var deferred = Promise.deferred = function() {
+Promise.deferred = function() {
 	var obj = {};
 	obj.promise = new Promise(function(resolve, reject) {
 		obj.resolve = resolve;
